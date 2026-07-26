@@ -5,21 +5,21 @@
 class Kite < Formula
   desc "One self-hosted Go binary for file transfer, hosted sharing, and pastes"
   homepage "https://github.com/Gandalf-Le-Dev/kite"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Gandalf-Le-Dev/kite/releases/download/v0.1.1/kite_0.1.1_darwin_amd64.tar.gz"
-      sha256 "94882edabfcb0018cbd53feba23af4d812d7cbfed7c99a6f07f11e68559dd116"
+      url "https://github.com/Gandalf-Le-Dev/kite/releases/download/v0.1.2/kite_0.1.2_darwin_amd64.tar.gz"
+      sha256 "5a065d1898e6b821a6c5b574671b2a828cf3cd405bd8c704902b602e29cd9697"
 
       define_method(:install) do
         bin.install "kite"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Gandalf-Le-Dev/kite/releases/download/v0.1.1/kite_0.1.1_darwin_arm64.tar.gz"
-      sha256 "aab6bca5ec1706bfea4337bd4442d8514f180c6f9b814adf5ac6467539bb3d82"
+      url "https://github.com/Gandalf-Le-Dev/kite/releases/download/v0.1.2/kite_0.1.2_darwin_arm64.tar.gz"
+      sha256 "967653498f55f0e268eb23b3d581842b1f51f1cb4f8d7ffc61131f3937f00871"
 
       define_method(:install) do
         bin.install "kite"
@@ -29,15 +29,15 @@ class Kite < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gandalf-Le-Dev/kite/releases/download/v0.1.1/kite_0.1.1_linux_amd64.tar.gz"
-      sha256 "99cbf1c9ce4329e527a22632d66a908f82b98ed62cdd1105e4fc49e5adc77b67"
+      url "https://github.com/Gandalf-Le-Dev/kite/releases/download/v0.1.2/kite_0.1.2_linux_amd64.tar.gz"
+      sha256 "a1df16e093eccbabba7b30cda4266836b697c21b1a875239d8600d5104616886"
       define_method(:install) do
         bin.install "kite"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gandalf-Le-Dev/kite/releases/download/v0.1.1/kite_0.1.1_linux_arm64.tar.gz"
-      sha256 "fd0d50d394e12744eeeeebde810407e6c9f861f99ad9918e9272cb642acf587d"
+      url "https://github.com/Gandalf-Le-Dev/kite/releases/download/v0.1.2/kite_0.1.2_linux_arm64.tar.gz"
+      sha256 "f6a98213af2f32f37ade2804186755a297b6dfa884bf7217c9e48d1c10db897d"
       define_method(:install) do
         bin.install "kite"
       end
